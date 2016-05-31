@@ -1,0 +1,22 @@
+{
+  "name": "mockadmin",
+  "version": "1.0.0",
+  "description": "Admin para mocks do backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Carlos Arantes",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "bootstrap-treeview": "^1.2.0",
+    "consolidate": "^0.14.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.20",
+    "swig": "^1.4.2",
+    "validator": "^5.3.0"
+  }
+}

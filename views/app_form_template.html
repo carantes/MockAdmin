@@ -1,0 +1,47 @@
+{% extends 'default.html' %}
+{% block content %}
+<div class="container-fluid">
+	<!-- BEGIN PAGE HEADER-->
+	<div class="row-fluid">
+		<div class="span12">
+			<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+			<h3 class="page-title">
+				Aplicativos <small>{{title}}</small>
+			</h3>
+			<!-- END PAGE TITLE & BREADCRUMB-->
+		</div>
+	</div>
+	<!-- END PAGE HEADER-->
+	<!-- BEGIN PAGE CONTENT-->
+	<div class="row-fluid">
+		<div class="span6 responsive" data-tablet="span12 fix-offset" data-desktop="span6">
+			<!-- BEGIN EXAMPLE TABLE PORTLET-->
+			<div class="portlet-body form">
+				<!-- BEGIN FORM-->
+				<form action="{{action}}" method="POST" class="form-horizontal" novalidate="novalidate">
+					<div class="control-group">
+						<label class="control-label">Nome<span class="required">*</span></label>
+						<div class="controls">
+							<input type="text" name="nome" class="span6 m-wrap" value="{{app.nome}}" />
+						</div>
+					</div>					
+					<div class="control-group">
+						<label class="control-label">Descrição</label>
+						<div class="controls">
+							<textarea name="descricao" class="span6 m-wrap" rows="3">{{app.descricao}}</textarea>
+						</div>
+					</div>
+					<div class="form-actions">
+						<button type="submit" class="btn blue">Gravar</button>
+						<button type="button" class="btn" onclick="javascript:location.href='/aplicativos'">Cancelar</button>                            
+					</div>
+				</form>
+				<!-- END FORM-->       
+			</div>
+			<!-- END EXAMPLE TABLE PORTLET-->
+		</div>
+	</div>
+	<!-- END PAGE CONTENT-->
+</div>
+<!-- END PAGE CONTAINER-->
+{% endblock %}
